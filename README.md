@@ -7,7 +7,7 @@ This repository includes the scripts to perform Gene Regulatory Network (GRN) in
 # Quick guide
 
 1. Download/clone the repository.
-1. Set up your input data as in [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/embryo.csv), with genes as rows and samples (pseudo-temporally sorted) as columns. The table sould be in Comma Separated Values (CSV) format, including a header with the samples names and the first column indicating the genes names.
+1. Set up your input data as in [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/mESC.csv), with genes as rows and samples (pseudo-temporally sorted) as columns. The table sould be in Comma Separated Values (CSV) format, including a header with the samples names and the first column indicating the genes names.
 1. Open the main script `INFERENCE.m` and run it in Matlab ( <kbd>F5</kbd> ).
 1. Use the dialog box to pick up the input file.
 1. Follow the progress in the command window.
