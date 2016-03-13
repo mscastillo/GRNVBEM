@@ -6,17 +6,17 @@ This repository includes the scripts to perform Gene Regulatory Network (GRN) in
 
 # Quick guide
 
-- Download/clone the repository.
-- Set up your input data as in [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/embryo.csv), with genes as rows and samples (pseudo-temporally sorted) as columns. The table sould be in Comma Separated Values (CSV) format, including a header with the samples names and the first column indicating the genes names.
-- Open the main script `INFERENCE.m` and run it in Matlab ( <kbd>F5</kbd> ).
-- Use the dialog box to pick up the input file.
-- Follow the progress in the command window.
-- The results will be saved in Simple Interaction File (SIF) format, in the same folder than the iput file (with suffix *__AR1MA1_GRN_inference.txt*). The output file includes a header and the next columns: (*i*) Parent node, (*ii*) interaction type ("-|" inhibition and "->" a activation), (*iii*) child node, (*iv*) the interaction weight, (*v*) the posterior probability and (*vi*) a score computed as the product of the posterior probability by the weight (normalized to the maximum). 
+1. Download/clone the repository.
+1. Set up your input data as in [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/embryo.csv), with genes as rows and samples (pseudo-temporally sorted) as columns. The table sould be in Comma Separated Values (CSV) format, including a header with the samples names and the first column indicating the genes names.
+1. Open the main script `INFERENCE.m` and run it in Matlab ( <kbd>F5</kbd> ).
+1. Use the dialog box to pick up the input file.
+1. Follow the progress in the command window.
+1. The results will be saved in Simple Interaction File (SIF) format with suffix *__AR1MA1_GRN_inference.txt*. The output file includes a header and the next columns: (*i*) Parent node, (*ii*) interaction type ("-|" inhibition and "->" a activation), (*iii*) child node, (*iv*) the interaction weight, (*v*) the posterior probability and (*vi*) a score computed as the product of the posterior probability by the weight (normalized to the maximum). 
 
 
 # Implementation
 
-The method is implemented in MATLAB, version 8.6 (R2015b). For previous or posterior versions some of the commands might be updated.
+The method is implemented in MATLAB, version 8.6 (R2015b). For previous/posterior versions some of the commands might be updated.
 
 
 # The inference method
