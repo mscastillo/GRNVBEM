@@ -1,2 +1,39 @@
-# GRNVBEM
-AR1MA1 - VBEM reverse engineering GRNs method
+AR1MA1 - VBEM method for reverse engineering GRNs from pseudo-time series data
+====
+
+This repository includes the scripts to perform Gene Regulatory Network (GRN) inference from pseudo-time series data using a *first-order autoregressive moving average* (AR1MA1) model within a variational Bayesian Expectation-Maximization (VBEM) framework.
+
+
+# Implementation
+
+The method is implemented in MATLAB, version 8.6 (R2015b). For previous or posterior versions some of the commands might be updated.
+
+
+# Quick guide
+
+- Download/clone the repository.
+- Set up your input data as in [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/embryo.csv), with genes as rows and samples (pseudo-temporally sorted) as columns. The table sould be in Comma Separated Values (CSV) format, including a header with the samples names and the first column indicating the genes names.
+- Open the main script `INFERENCE.m` and run it in Matlab ( <kbd>F5</kbd> ).
+- Use the dialog box to pick up the input file.
+- Follow the progress in the command window.
+- The results will be saved in Simple Interaction File (SIF) format, in the same folder than the iput file (with suffix *__GRN*). The output includes next columns: (*i*) Parent node, (*ii*) interaction type ("-|" inhibition and "->" a activation), (*iii*) child node, (*iv*) the interaction weight, (*v*) the posterior probability and (*vi*) a score computed as the product of the posterior probability by the weight (normalized to the maximum). 
+
+
+# Example
+
+There is a mouse Embryo Stem Cells (mESC) dataset [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/embryo.csv). This data was originally published in:
+
+> *Resolution of cell fate decisions revealed by single-cell gene expression analysis from zygote to blastocyst*, 2010, Developmental Cell, PubMed: [20412781](http://www.ncbi.nlm.nih.gov/pubmed/20412781)
+
+The data were downloaded from source, processed to select cells within the oocyte-to-epiblast stages and computationally sorted according to a pseudo-time index.
+
+
+# The inference method
+
+The AR1MA1-VBEM method is explained in detail in 4th chapter of my PhD dissertation:
+
+> *Bayesian methods for inferring GRNs and protein profiles from gene expression microarrays data*, 2012, ISBN: [978-84-9028-501-5](http://cul.worldcat.org/oclc/870124049)
+
+An early VBEM approach, based on a *first-order autoregressive* (AR1) model, was published in:
+
+> *A Survey of Statistical Models for Reverse Engineering Gene Regulatory Networks*, 2009, DOI: [10.1109/MSP.2008.930647](http://dx.doi.org/10.1109%2FMSP.2008.930647)
