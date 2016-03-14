@@ -42,4 +42,4 @@ The data were downloaded from source, processed to select cells within the oocyt
 
 #### Results
 
-The results are provided in a text file with the SIF format as described above. A representation of the resulting network can be found [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/GRN.pdf). This plot was drawn with Cytoscape using [this](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/GRN_style.xml) style.
+The results are provided [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/mESC__AR1MA1_GRN_inference.txt) in SIF format as described above. A representation of the results as network can be found [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/GRN.pdf). The network was drawn with Cytoscape using [this](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/GRN_style.xml) style.
