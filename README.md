@@ -36,10 +36,10 @@ A mouse Embryo Stem Cells (mESC) dataset is provided [here](https://github.com/m
 
 > *Resolution of cell fate decisions revealed by single-cell gene expression analysis from zygote to blastocyst*, 2010, Developmental Cell, PubMed: [20412781](http://www.ncbi.nlm.nih.gov/pubmed/20412781)
 
-## Data processing
+#### Data processing
 
 The data were downloaded from source, processed to select cells within the oocyte-to-epiblast stages and computationally sorted according to a pseudo-time index.
 
-## Results
+#### Results
 
 The results are provided in a text file with the SIF format as described above. A representation of the resulting network can be found [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/GRN.pdf). This plot was drawn with Cytoscape using [this](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/GRN_style.xml) style.
