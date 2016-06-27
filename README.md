@@ -1,25 +1,29 @@
 AR1MA1 - VBEM method for reverse engineering GRNs from pseudo-time series data
 ====
 
+
 This repository includes the scripts to perform Gene Regulatory Network (GRN) inference from time series or pseudo-time series data using a *first-order autoregressive moving average* (AR1MA1) model within a variational Bayesian Expectation-Maximization (VBEM) framework.
 
 
 # Quick guide
 
+
 1. Download/clone this repository.
 1. Set up your input data as [here](https://github.com/mscastillo/GRNVBEM/blob/master/mESC/mESC.csv), with genes as rows and samples (pseudo-temporally sorted) as columns. The table sould be in Comma Separated Values (CSV) format, with a header (sample IDs) and column names (gene or proteins IDs).
 1. Open the main script (`INFERENCE.m`) in Matlab and run it ( <kbd>F5</kbd> ).
 1. Use the dialog box to pick up the input CSV file.
-1. The command window will show the progress.
-1. The results will be saved in a text file with Simple Interaction File (SIF) extended format, with suffix *__AR1MA1_GRN_inference.txt*. The output file includes a header and the next columns: (*i*) Parent node, (*ii*) interaction type ("-|" for inhibition and "->" for activation), (*iii*) child node, (*iv*) the interaction weight, (*v*) the posterior probability and (*vi*) a score computed as the product of the posterior probability and the weight (normalized to the maximum value). 
+1. The command window will show the inference progress.
+1. The results will be saved in a text file using Simple Interaction File (SIF) extended format, with same filename and suffix *__AR1MA1_GRN_inference.txt*. The output file includes a header and the next columns: (*i*) Parent node, (*ii*) interaction type ("-|" for inhibition and "->" for activation), (*iii*) child node, (*iv*) the interaction weight, (*v*) the posterior probability and (*vi*) a score computed as the product of the posterior probability and the weight (normalized to the maximum value). 
 
 
 # Implementation
+
 
 The method is implemented in MATLAB, version 8.6 (R2015b). For previous/posterior versions some of the commands might be updated.
 
 
 # The inference method
+
 
 The AR1MA1-VBEM method is explained in detail in 4th chapter of my PhD dissertation:
 
