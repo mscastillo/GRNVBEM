@@ -25,9 +25,9 @@ The method is implemented in MATLAB, version 8.6 (R2015b). For previous/posterio
 # The inference method
 
 
-The AR1MA1-VBEM method is explained in detail in 4th chapter of my PhD dissertation:
+The AR1MA1-VBEM method is explained in detail in 4th chapter of my PhD thesis:
 
-> *Bayesian methods for inferring GRNs and protein profiles from gene expression microarrays data*, 2012, ISBN: [978-84-9028-501-5](http://cul.worldcat.org/oclc/870124049)
+> *Bayesian methods for the inference of GRNs and protein profiles from gene expression microarrays data*, 2012, ISBN: [978-84-9028-501-5](http://cul.worldcat.org/oclc/870124049)
 
 An early VBEM approach, based on a *first-order autoregressive* (AR1) model, was published in:
 
