@@ -25,11 +25,11 @@ The method is implemented in MATLAB, version 8.6 (R2015b). For previous/posterio
 # The inference method
 
 
-The AR1MA1-VBEM method is explained in detail in the 4th chapter of my PhD thesis:
+The AR1MA1-VBEM method for GRN reverse engineering is explained here:
 
-> *Bayesian methods for the inference of GRNs and protein profiles from gene expression microarrays data*, 2012, ISBN: [978-84-9028-501-5](http://cul.worldcat.org/oclc/870124049)
+> *A Bayesian framework for the inference of gene regulatory networks from time and pseudo-time series data*, 2017, DOI: [10.1093/bioinformatics/btx605](https://academic.oup.com/bioinformatics/article/34/6/964/4222631)
 
-An early VBEM approach, based on a *first-order autoregressive* (AR1) model, was published in:
+An early VBEM based approach, based on a *first-order autoregressive* (AR1) model, was published in:
 
 > *A Survey of Statistical Models for Reverse Engineering Gene Regulatory Networks*, 2009, DOI: [10.1109/MSP.2008.930647](http://dx.doi.org/10.1109%2FMSP.2008.930647)
 
